@@ -8,49 +8,92 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background-color: #0f172a; color: white; }
-
-    .nav-icon { font-size: 1.8rem; }
-
+    body { 
+      background-color: #0f172a; 
+      color: white; 
+    }
+  
+    .nav-icon { 
+      font-size: 1.8rem; 
+    }
+  
+    /* Novo CSS para o cryptoBar */
     #cryptoBar {
-      background-color: #1e293b;
-      white-space: nowrap;
-      overflow: hidden;
-      position: fixed;
-      top: 64px; /* ajustado conforme header */
-      z-index: 20;
-      padding: 10px 0;
-      font-size: 0.95rem;
-    }
+  background-color: #13293b;
+  white-space: nowrap;
+  overflow: hidden;
+  position: fixed;
+  top: 64px; /* Fica logo abaixo do cabeçalho */
+  z-index: 20;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  width: 100%;
+}
 
+  
     #cryptoScroll {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 20s linear infinite;
+      display: flex;
+      animation: scroll-left 15s linear infinite;
     }
-
+  
     @keyframes scroll-left {
-      from { transform: translateX(0); }
-      to { transform: translateX(-100%); }
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
-
+  
+    #cryptoScroll span {
+      color: #ffffff; /* Cor do texto branca */
+      margin: 0 15px;
+    }
+  
+    #cryptoScroll span i {
+      color: #fbbf24; /* Cor dos ícones - amarelo */
+    }
+  
+    #cryptoScroll span:nth-child(1) i {
+      color: #f97316; /* Cor do ícone BTC para laranja */
+    }
+  
+    #cryptoScroll span:nth-child(2) i {
+      color: #3b82f6; /* Cor do ícone ETH para azul */
+    }
+  
+    #cryptoScroll span:nth-child(3) i {
+      color: #f59e0b; /* Cor do ícone BNB */
+    }
+  
+    #cryptoScroll span:nth-child(4) i {
+      color: #10b981; /* Cor do ícone XRP */
+    }
+  
+    #cryptoScroll span:nth-child(5) i {
+      color: #22c55e; /* Cor do ícone USDT */
+    }
+  
+    #cryptoScroll span:nth-child(6) i {
+      color: #9333ea; /* Cor do ícone ADA */
+    }
+  
+    #cryptoScroll span:nth-child(7) i {
+      color: #f472b6; /* Cor do ícone SOL */
+    }
+  
+    #cryptoScroll span:nth-child(8) i {
+      color: #a3e635; /* Cor do ícone DOGE */
+    }
+  
     @keyframes fade-in-down {
-      0% { opacity: 0; transform: translate(-50%, -20px); }
-      100% { opacity: 1; transform: translate(-50%, 0); }
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
-
+  
     .animate-fade-in-down {
-      animation: fade-in-down 0.5s ease-out forwards;
+      animation: fade-in-down 0.4s ease-out both;
     }
-
-    @keyframes fade-in-down {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-in-down {
-  animation: fade-in-down 0.4s ease-out both;
-}
 
   </style>
 </head>
