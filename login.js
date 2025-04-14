@@ -1,15 +1,15 @@
 const logins = {
     "user1@email.com": {
       password: "F4G7H2J9",
-      redirect: "https://site1.com"
+      redirect: "F4G7H2J9.html"
     },
     "admin@miner.com": {
       password: "B3K1D8P0",
-      redirect: "https://site2.com"
+      redirect: "B3K1D8P0.html"
     },
     "teste@btc.com": {
       password: "W9X2V5L1",
-      redirect: "https://site3.com"
+      redirect: "B3K1D8P0.html"
     }
   };
   
