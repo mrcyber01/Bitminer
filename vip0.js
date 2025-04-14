@@ -172,4 +172,37 @@ function showToast(tipo) {
     setTimeout(() => toast.remove(), 6000);
   }
   
+    // Lógica de Mineração Concluída
+    if (progressBarWidth === 100) {
+      document.getElementById('withdrawalToast').classList.remove('hidden');
+    }
   
+    const notificationBtn = document.getElementById("notificationBtn");
+const notificationPanel = document.getElementById("notificationPanel");
+const notificationBadge = document.getElementById("notificationBadge");
+
+let notificationVisible = false;
+
+notificationBtn.addEventListener("click", () => {
+  notificationVisible = !notificationVisible;
+
+  if (notificationVisible) {
+    notificationPanel.classList.remove("hidden");
+    notificationBadge.style.display = "none";
+  } else {
+    notificationPanel.classList.add("hidden");
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const notificationBtn = document.getElementById("notificationBtn");
+  const notificationPanel = document.getElementById("notificationPanel");
+
+  notificationBtn.addEventListener("click", () => {
+    if (notificationPanel.classList.contains("hidden")) {
+      notificationPanel.classList.remove("hidden");
+    } else {
+      notificationPanel.classList.add("hidden");
+    }
+  });
+});
