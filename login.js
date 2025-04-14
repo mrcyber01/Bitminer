@@ -9,7 +9,7 @@ const logins = {
     },
     "teste@btc.com": {
       password: "W9X2V5L1",
-      redirect: "B3K1D8P0.html"
+      redirect: "W9X2V5L1.html"
     }
   };
   
