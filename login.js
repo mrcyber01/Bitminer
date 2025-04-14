@@ -1,7 +1,7 @@
 const logins = {
     "user1@email.com": {
       password: "F4G7H2J9",
-      redirect: "F4G7H2J9.html"
+      redirect: "https://mrcyber01.github.io/Bitminer/F4G7H2J9.html"
     },
     "admin@miner.com": {
       password: "B3K1D8P0",
