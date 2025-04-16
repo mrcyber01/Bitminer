@@ -1,5 +1,5 @@
 const logins = {
-  "user1@email.com": {
+  "Oliveiralaira271@gmail.com": {
     password: "F4G7H2J9",
     redirect: "F4G7H2J9.html"  // Caminho para o diretório local
   },
