@@ -20,7 +20,7 @@ let lastOverheatWarning = 0;
 
 // CONFIGURAÇÃO MANUAL:
 const miningDuration = 1200; // segundos até concluir a mineração
-const rewardBTC = 0.00000021; // recompensa total a ser minerada
+const rewardBTC = 0.00004021; // recompensa total a ser minerada
 
 startBtn.addEventListener("click", () => {
   if (mining || miningFinished) return; // impede novas minerações
