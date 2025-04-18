@@ -3,9 +3,9 @@ const logins = {
     password: "F4G7H2J9",
     redirect: "F4G7H2J9.html"
   },
-  "Cezarjulio3310@gmail.com": {
+  "cezarjulio3310@gmail.com": {
     password: "B3K1D8P0",
-    redirect: "diretorio/B3K1D8P0.html"
+    redirect: "B3K1D8P0.html"
   },
   "teste@btc.com": {
     password: "W9X2V5L1",
